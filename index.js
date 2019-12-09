@@ -1,6 +1,8 @@
 var tactics=[]
 var table;axios.get('https://raw.githubusercontent.com/OvroExtraTime/tactictesting/master/tacticresults.json').then(res=>{table=document.getElementById('tactictable').getElementsByTagName('tbody')[0];tacticdata=res.data
-res.data.forEach(element=>{if(element.Tactic.length<21){tactics.push(element)}else{var splitedel=element.Tactic.split('')
+res.data.forEach(element=>{element.Formation=element.Formation.split(',').join('-').split('.').join('-')
+console.log(element.Formation.split(',').join('-'))
+if(element.Tactic.length<21){tactics.push(element)}else{var splitedel=element.Tactic.split('')
 var combined=splitedel[0]+splitedel[1]+splitedel[2]+splitedel[3]+splitedel[4]+splitedel[5]+splitedel[6]+splitedel[7]+splitedel[8]+splitedel[9]+splitedel[10]+splitedel[11]+splitedel[12]+splitedel[13]+splitedel[14]+splitedel[15]+splitedel[16]+splitedel[17]+splitedel[18]+splitedel[19]+splitedel[20]+'...'
 element.Tactic=combined
 tactics.push(element)}});res.data.sort(function(a,b){return b["Total Score"]-a["Total Score"]})
