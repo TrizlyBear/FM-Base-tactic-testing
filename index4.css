@@ -71,3 +71,7 @@ table {
      position: absolute; 
      margin-top: -20px;
 }
+
+.score{
+    text-align: center;
+}
