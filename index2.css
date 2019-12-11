@@ -41,7 +41,6 @@ button{
         color: #3498db;
         border-color: #3498db;
         background: none;
-        padding-bottom: 10px;
 }
 
 .score{
@@ -51,6 +50,10 @@ button{
 
 .tactic{
     width: 10vw !important;
+}
+
+.formation{
+    width 5vw;
 }
 
 table {
