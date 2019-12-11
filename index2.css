@@ -4,6 +4,7 @@ th{
     font: 1.3rem / 1.4 sans-serif;
     font-family: 'Roboto',sans-serif;
     color: #3498db;
+    font-weight: bold;
 }
 
 html{
@@ -40,6 +41,7 @@ button{
         color: #3498db;
         border-color: #3498db;
         background: none;
+        padding-bottom: 10px;
 }
 
 .score{
