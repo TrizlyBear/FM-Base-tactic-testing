@@ -5,6 +5,10 @@ th{
     font-family: 'Roboto',sans-serif;
     color: #3498db;
     font-weight: bold;
+    position: sticky;
+    top: 0;
+    background: #292e39;
+}
 }
 
 html{
