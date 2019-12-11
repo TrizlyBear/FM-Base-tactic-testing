@@ -72,9 +72,6 @@ table {
      margin-top: -20px;
 }
 
-::-webkit-scrollbar {width:3px;height:3px;}
-::-webkit-scrollbar-button {background-color:rgba(52,152,219,1);}
-::-webkit-scrollbar-track {background-color:rgba(52,73,94,1);}
-::-webkit-scrollbar-track-piece {background-color:rgba(100,96,96,1);}
-::-webkit-scrollbar-thumb {height:50px; background-color:rgba(124,122,122,1); border-radius:3px;}
-::-webkit-scrollbar-corner {background-color:rgba(52,73,94,1);}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#292E39;border-radius:0px}
+::-webkit-scrollbar-thumb{background:#3498db;border-radius:0px}
