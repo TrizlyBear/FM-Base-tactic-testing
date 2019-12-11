@@ -72,6 +72,19 @@ table {
      margin-top: -20px;
 }
 
+.titlemagic {
+	width: 100;
+}
+
+.colorbox {
+  background-color: #f1c40f;
+  border-radius: 10px;
+  padding: 5px;
+  width: 360px;
+  color: #292E39;
+  margin: auto;
+}
+
 ::-webkit-scrollbar{width:10px}
 ::-webkit-scrollbar-track{background:#292E39;border-radius:0px}
 ::-webkit-scrollbar-thumb{background:#3498db;border-radius:0px}
