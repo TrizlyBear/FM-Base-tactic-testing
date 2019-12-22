@@ -111,3 +111,10 @@ table {
     background: #3498db;
     border-radius: 0px
 }
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
