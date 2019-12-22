@@ -87,6 +87,10 @@ table {
   width: 360px;
   color: #292E39;
   margin: auto;
+	
+table {
+    text-align: center;
+}
 }
 
 .score{
