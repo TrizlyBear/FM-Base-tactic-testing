@@ -28,8 +28,9 @@ axios.get('https://raw.githubusercontent.com/OvroExtraTime/tactictesting/master/
     tacticdata = res.data
     res.data.forEach(element => {
         element.Formation = element.Formation.split(',').join('-').split('.').join('-').split(' ')[0]
-        console.log(element.Formation.split(',').join('-'))
+        
         if (element.Tactic.length < 21) {
+            element.fulltactic = element.Tactic
             tactics.push(element)
             // console.log(element.Tactic.length)
         } else {
@@ -177,4 +178,6 @@ function filternone() {
     }
     new Tablesort(document.getElementById('tactictable'));
 }
+
+
 
