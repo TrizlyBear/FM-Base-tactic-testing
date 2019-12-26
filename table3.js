@@ -209,7 +209,7 @@ var tactics = [];
     })
 }())
 var table;
-axios.get('https://raw.githubusercontent.com/OvroExtraTime/tactictesting/master/tacticresults.json').then(res => {
+axios.get('https://raw.githubusercontent.com/OvroExtraTime/tactictesting/master/newresults.json').then(res => {
     table = document.getElementById('tactictable').getElementsByTagName('tbody')[0];
     tacticdata = res.data
     res.data.forEach(element => {
