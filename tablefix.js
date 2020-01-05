@@ -26,16 +26,23 @@ var table;
 axios.get('https://raw.githubusercontent.com/OvroExtraTime/tactictesting/master/tacticresults.json').then(res => {
     table = document.getElementById('tactictable').getElementsByTagName('tbody')[0];
     tacticdata = res.data
+    
     res.data.forEach(element => {
+
         element.Formation = element.Formation.split(',').join('-').split('.').join('-').split(' ')[0]
-        
+        console.log(element.Formation.split(',').join('-'))
         if (element.Tactic.length < 21) {
             element.fulltactic = element.Tactic
             tactics.push(element)
             // console.log(element.Tactic.length)
         } else {
             element.fulltactic = element.Tactic
-            var splitedel = element.Tactic.split('')
+            try {
+                var splitedel = element.Tactic.split('')
+            } catch (error) {
+                console.log(element)
+            }
+            
             var combined = splitedel[0] + splitedel[1] + splitedel[2] + splitedel[3] + splitedel[4] + splitedel[5] + splitedel[6] + splitedel[7] + splitedel[8] + splitedel[9] + splitedel[10] + splitedel[11] + splitedel[12] + splitedel[13] + splitedel[14] + splitedel[15] + splitedel[16] + splitedel[17] + splitedel[18] + splitedel[19] + splitedel[20] + '...'
             element.Tactic = combined
             // console.log(combined)
@@ -61,7 +68,7 @@ axios.get('https://raw.githubusercontent.com/OvroExtraTime/tactictesting/master/
 })
 var cfilter = 'none';
 function filtersubtop() {
-    
+    search()
     var tableh = document.getElementById('tactictable')
     tableh.deleteTHead()
     var th = tableh.createTHead()
@@ -97,7 +104,7 @@ function filtersubtop() {
     new Tablesort(document.getElementById('tactictable'));
 }
 function filterunderdog() {
-    
+    search()
     var tableh = document.getElementById('tactictable')
     tableh.deleteTHead()
     var th = tableh.createTHead()
@@ -134,7 +141,7 @@ function filterunderdog() {
 }
 
 function filternone() {
-    
+    search()
     var tableh = document.getElementById('tactictable')
     tableh.deleteTHead()
     var th = tableh.createTHead()
@@ -179,5 +186,24 @@ function filternone() {
     new Tablesort(document.getElementById('tactictable'));
 }
 
-
+var filter;
+function search() {
+    var td, i, txt;
+  
+    var table = document.getElementById("tactictable");
+    var tr = table.getElementsByTagName("tr");
+    filter = document.getElementById("sinput").value.toUpperCase();
+  
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+        txt = td.textContent;
+        if (txt.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+        } else {
+            tr[i].style.display = "none";
+        }
+        }
+    }
+}
 
