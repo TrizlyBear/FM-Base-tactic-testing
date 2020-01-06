@@ -1,0 +1,131 @@
+th {
+    text-align: left;
+    vertical-align: top;
+    font: 1.3rem / 1.4 sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #3498db;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    background: #292e39;
+}
+}
+
+html {
+    font: 1.3rem / 1.4 sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #292E39;
+}
+
+button {
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: .35em;
+    color: #363636;
+    display: inline-flex;
+    font-size: 14px;
+    height: 32px;
+    justify-content: flex-start;
+    line-height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    color: #3498db;
+    border-color: #3498db;
+    background: none;
+}
+
+.score {
+    width: 5vw;
+
+}
+
+.tactic {
+    width: 10vw !important;
+}
+
+.formation {
+    width 5vw;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+#scrolltable {
+    margin-top: 20px;
+    height: 600px;
+    overflow: auto;
+}
+
+#scrolltable th div {
+    position: absolute;
+    margin-top: -20px;
+}
+
+.titlemagic {
+    width: 100;
+}
+
+.colorbox {
+    background-color: #f1c40f;
+    border-radius: 10px;
+    padding: 5px;
+    width: 360px;
+    color: #292E39;
+    margin: auto;
+
+    table {
+        text-align: center;
+    }
+}
+
+.score {
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: #292E39;
+    border-radius: 0px
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 0px
+}
+
+table {
+    text-align: left !important;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: 'Roboto',sans-serif;
+    line-height: 1.4;
+    height: 32px;
+    background: #292e39;
+    color: #65b1e4;
+    border: solid 1px #56a9e1;
+    border-radius: .35em;
+    padding-left: 6px;
+}
